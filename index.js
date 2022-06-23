@@ -2699,13 +2699,7 @@ exports.submitBom = function (args, bom, callback) {
   let serverUrl = args.serverUrl + "/api/v1/bom";
 
   const formData = {
-    bom: {
-      value: bom,
-      options: {
-        filename: args.output ? pathLib.basename(args.output) : "bom.xml",
-        contentType: "text/xml",
-      },
-    },
+    bom
   };
   if (args.projectId) {
     formData.project = args.projectId;
