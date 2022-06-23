@@ -2699,7 +2699,7 @@ exports.submitBom = function (args, bom, callback) {
   let serverUrl = args.serverUrl + "/api/v1/bom";
 
   const formData = {
-    bom
+    bomaaa ccvc...."_"''
   };
   if (args.projectId) {
     formData.project = args.projectId;
